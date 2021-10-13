@@ -1,0 +1,4 @@
+com/example/realtimechat/databinding/ActivityMainBinding.java
+ com.example.realtimechat.databinding.ActivityMainBinding
+com/example/realtimechat/BuildConfig.java
+ com.example.realtimechat.BuildConfig

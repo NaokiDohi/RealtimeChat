@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.realtimechat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml
+10    <!-- 追記 -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:6:5-78
+12-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:8:5-24:19
+15        android:allowBackup="true"
+15-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.6.0] /Users/naoki/.gradle/caches/transforms-3/962d0d7e2063add176b5bad109511b59/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.RealtimeChat" >
+24-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:14:9-50
+25        <activity
+25-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:15:9-23:20
+26            android:name="com.example.realtimechat.MainActivity"
+26-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:16:13-41
+27            android:exported="true" >
+27-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:17:13-36
+28            <intent-filter>
+28-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:18:13-22:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:19:17-69
+29-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:19:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:21:17-77
+31-->/Users/naoki/AndroidStudioProjects/RealtimeChat/app/src/main/AndroidManifest.xml:21:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <service
+35-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/naoki/.gradle/caches/transforms-3/308410bdcb38af5c65cda78eba268679/transformed/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:12:9-18:19
+36            android:name="com.google.firebase.components.ComponentDiscoveryService"
+36-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/naoki/.gradle/caches/transforms-3/308410bdcb38af5c65cda78eba268679/transformed/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:13:13-84
+37            android:directBootAware="true"
+37-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+38            android:exported="false" >
+38-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/naoki/.gradle/caches/transforms-3/308410bdcb38af5c65cda78eba268679/transformed/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:14:13-37
+39            <meta-data
+39-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/naoki/.gradle/caches/transforms-3/308410bdcb38af5c65cda78eba268679/transformed/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:15:13-17:85
+40                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+40-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/naoki/.gradle/caches/transforms-3/308410bdcb38af5c65cda78eba268679/transformed/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:16:17-124
+41                android:value="com.google.firebase.components.ComponentRegistrar" />
+41-->[com.google.firebase:firebase-database-ktx:19.6.0] /Users/naoki/.gradle/caches/transforms-3/308410bdcb38af5c65cda78eba268679/transformed/jetified-firebase-database-ktx-19.6.0/AndroidManifest.xml:17:17-82
+42            <meta-data
+42-->[com.google.firebase:firebase-common-ktx:19.5.0] /Users/naoki/.gradle/caches/transforms-3/f1c17e46893a47492c3b284c8e706711/transformed/jetified-firebase-common-ktx-19.5.0/AndroidManifest.xml:15:13-17:85
+43                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+43-->[com.google.firebase:firebase-common-ktx:19.5.0] /Users/naoki/.gradle/caches/transforms-3/f1c17e46893a47492c3b284c8e706711/transformed/jetified-firebase-common-ktx-19.5.0/AndroidManifest.xml:16:17-113
+44                android:value="com.google.firebase.components.ComponentRegistrar" />
+44-->[com.google.firebase:firebase-common-ktx:19.5.0] /Users/naoki/.gradle/caches/transforms-3/f1c17e46893a47492c3b284c8e706711/transformed/jetified-firebase-common-ktx-19.5.0/AndroidManifest.xml:17:17-82
+45            <meta-data
+45-->[com.google.firebase:firebase-database:19.6.0] /Users/naoki/.gradle/caches/transforms-3/690f47b1056d4ad27258118ccd085b1b/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:32:13-34:85
+46                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+46-->[com.google.firebase:firebase-database:19.6.0] /Users/naoki/.gradle/caches/transforms-3/690f47b1056d4ad27258118ccd085b1b/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:33:17-109
+47                android:value="com.google.firebase.components.ComponentRegistrar" />
+47-->[com.google.firebase:firebase-database:19.6.0] /Users/naoki/.gradle/caches/transforms-3/690f47b1056d4ad27258118ccd085b1b/transformed/jetified-firebase-database-19.6.0/AndroidManifest.xml:34:17-82
+48            <!--
+49                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+50                clients to use it as well, by defining this registrar in their own core/common library.
+51            -->
+52            <meta-data
+52-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+53                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+53-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+54                android:value="com.google.firebase.components.ComponentRegistrar" />
+54-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+55        </service>
+56
+57        <provider
+57-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+58            android:name="com.google.firebase.provider.FirebaseInitProvider"
+58-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+59            android:authorities="com.example.realtimechat.firebaseinitprovider"
+59-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+60            android:directBootAware="true"
+60-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+61            android:exported="false"
+61-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+62            android:initOrder="100" />
+62-->[com.google.firebase:firebase-common:19.5.0] /Users/naoki/.gradle/caches/transforms-3/5c64639c8bd22c48373975af1d2e897f/transformed/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+63
+64        <activity
+64-->[com.google.android.gms:play-services-base:17.0.0] /Users/naoki/.gradle/caches/transforms-3/e707e9e9b712b3a1d6cdaecfd44976a3/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+65            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+65-->[com.google.android.gms:play-services-base:17.0.0] /Users/naoki/.gradle/caches/transforms-3/e707e9e9b712b3a1d6cdaecfd44976a3/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+66            android:exported="false"
+66-->[com.google.android.gms:play-services-base:17.0.0] /Users/naoki/.gradle/caches/transforms-3/e707e9e9b712b3a1d6cdaecfd44976a3/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+67            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+67-->[com.google.android.gms:play-services-base:17.0.0] /Users/naoki/.gradle/caches/transforms-3/e707e9e9b712b3a1d6cdaecfd44976a3/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+68
+69        <meta-data
+69-->[com.google.android.gms:play-services-basement:17.0.0] /Users/naoki/.gradle/caches/transforms-3/a8343f2a49e7cc119b741f34186f3500/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+70            android:name="com.google.android.gms.version"
+70-->[com.google.android.gms:play-services-basement:17.0.0] /Users/naoki/.gradle/caches/transforms-3/a8343f2a49e7cc119b741f34186f3500/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+71            android:value="@integer/google_play_services_version" />
+71-->[com.google.android.gms:play-services-basement:17.0.0] /Users/naoki/.gradle/caches/transforms-3/a8343f2a49e7cc119b741f34186f3500/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+72    </application>
+73
+74</manifest>
