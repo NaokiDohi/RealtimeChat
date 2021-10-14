@@ -4,7 +4,7 @@
             "outputFile": "/Users/naoki/AndroidStudioProjects/RealtimeChat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/Users/naoki/.gradle/caches/transforms-3/ae26bf43b0e0fcae3cd4ebb44283b8f4/transformed/appcompat-1.3.1/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/Users/naoki/.gradle/caches/transforms-3/e47605aae859601a2b66a4f4c40aba2b/transformed/appcompat-1.3.1/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

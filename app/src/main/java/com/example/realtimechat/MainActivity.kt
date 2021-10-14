@@ -2,14 +2,13 @@ package com.example.realtimechat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import com.example.realtimechat.databinding.ActivityMainBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,16 +20,27 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        database = Firebase.database
+        database = FirebaseDatabase.getInstance(URL)
 
         database.getReference("messages").addValueEventListener(
             object : ValueEventListener{
                 // 初回実行時と値変更時にコール
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    val messages = mutableListOf<ChatMessage>()
+
                     for (postSnapshot in dataSnapshot.children){
                         val key = postSnapshot.key
-                        val value = postSnapshot.value
-                        Log.d("called value", "key=${key}, value=${value}")
+//                        val value = postSnapshot.value
+                        postSnapshot.getValue(ChatMessage::class.java)?.let {
+                            messages.add(it)
+                            Log.d("called value", "key=${key}, value=${it}")
+                            Log.d("messages", "messages=${messages}")
+                        }
+
+                    }
+
+                    Handler(mainLooper).post {
+                        // RecyclerViewに反映などの操作
                     }
                 }
 
@@ -50,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             .child(System.currentTimeMillis().toString())
             .setValue(ChatMessage("Naoki Dohi", "Hello World!!"))
 
-        Log.d("hoge", "firebase is setting now")
+        Log.d("set", "firebase is setting now")
     }
 }
 

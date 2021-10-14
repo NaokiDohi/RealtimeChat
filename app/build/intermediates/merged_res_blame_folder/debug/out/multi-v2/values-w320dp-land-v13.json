@@ -4,7 +4,7 @@
             "outputFile": "/Users/naoki/AndroidStudioProjects/RealtimeChat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/naoki/.gradle/caches/transforms-3/3d9cddd790cc13f8fadf861cc44e021e/transformed/material-1.4.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+                    "source": "/Users/naoki/.gradle/caches/transforms-3/7c6beb6a412320025580003e4f2cd185/transformed/material-1.4.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
